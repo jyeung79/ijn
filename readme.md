@@ -95,8 +95,8 @@ Take a look at the [`packages/app/design`](https://github.com/nandorojo/solito/t
 
 - `apps` entry points for each app
 
-   - `expo`
-    - `app` you'll be creating files inside of `apps/expo/app` to use file system routing on iOS and Android.
+  - `expo`
+  - `app` you'll be creating files inside of `apps/expo/app` to use file system routing on iOS and Android.
   - `next`
 
 - `packages` shared packages across apps

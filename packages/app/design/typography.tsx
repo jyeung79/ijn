@@ -29,7 +29,7 @@ export interface AProps extends ComponentProps<typeof Text> {
 
 export const A = forwardRef<NativeText, StyledProps<AProps>>(function A(
   { className = '', href, target, ...props },
-  ref
+  ref,
 ) {
   const nativeAProps = Platform.select<Partial<AProps>>({
     web: {
