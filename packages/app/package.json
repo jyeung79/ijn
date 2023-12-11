@@ -3,9 +3,13 @@
   "name": "app",
   "main": "index.ts",
   "dependencies": {
+    "@ijn/api": "workspace:*",
+    "@trpc/client": "^10.44.1",
+    "@trpc/react-query": "^10.44.1",
     "moti": "latest",
     "nativewind": "2.0.11",
-    "solito": "4.0.1"
+    "solito": "4.0.1",
+    "superjson": "^2.2.1"
   },
   "sideEffects": false
 }
