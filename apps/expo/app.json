@@ -7,6 +7,14 @@
     "platforms": ["ios", "android"],
     "ios": {
       "bundleIdentifier": "com.solito.nativewind"
-    }
+    },
+    "plugins": [
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps._some_id_here_"
+        }
+      ]
+    ]
   }
 }
