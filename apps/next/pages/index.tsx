@@ -1,3 +1,3 @@
-import { HomeScreen } from 'app/features/home/screen'
+import { HomeScreen } from '@ijn/app/features/home/screen'
 
 export default HomeScreen

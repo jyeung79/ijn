@@ -1,6 +1,6 @@
 {
   "version": "0.0.0",
-  "name": "app",
+  "name": "@ijn/app",
   "main": "index.ts",
   "dependencies": {
     "@ijn/api": "workspace:*",
@@ -13,5 +13,8 @@
     "solito": "4.0.1",
     "superjson": "^2.2.1"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "devDependencies": {
+    "tailwindcss": "3.3.2"
+  }
 }

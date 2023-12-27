@@ -6,7 +6,7 @@
     "scheme": "solito-nativewind",
     "platforms": ["ios", "android"],
     "ios": {
-      "bundleIdentifier": "com.solito.nativewind"
+      "bundleIdentifier": "com.ijn.app"
     },
     "plugins": [
       [

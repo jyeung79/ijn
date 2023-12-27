@@ -1,7 +1,7 @@
 import { createParam } from 'solito'
 import { TextLink } from 'solito/link'
-import { Text } from 'app/design/typography'
-import { View } from 'app/design/view'
+import { Text } from '@ijn/app/design/typography'
+import { View } from '@ijn/app/design/view'
 
 const { useParam } = createParam<{ id: string }>()
 

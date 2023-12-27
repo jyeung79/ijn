@@ -63,7 +63,7 @@ Components are written using the `styled()` higher-order component.
 In your app's design system, you can start by building your own UI primitives:
 
 ```tsx
-// packages/app/design/typography
+// packages/@ijn/app/design/typography
 import { Text } from 'react-native'
 import { styled } from 'nativewind'
 
@@ -78,7 +78,7 @@ You can then use the `className` prop, just like regular Tailwind CSS:
 <P className="dark:text-white">Solito + NativeWind</P>
 ```
 
-Take a look at the [`packages/app/design`](https://github.com/nandorojo/solito/tree/master/example-monorepos/with-tailwind/packages/app/design) folder to see how components are created with ease.
+Take a look at the [`packages/@ijn/app/design`](https://github.com/nandorojo/solito/tree/master/example-monorepos/with-tailwind/packages/@ijn/app/design) folder to see how components are created with ease.
 
 > If you're reading the NativeWind docs, you might find that you can use `className` directly without using `styled`. Since this requires the Babel plugin for all platforms, it won't work with Solito. Be sure to always wrap your components with `styled`.
 

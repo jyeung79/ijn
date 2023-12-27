@@ -1,12 +1,17 @@
-import { A, H1, P, Text, TextLink } from 'app/design/typography'
-import { Row } from 'app/design/layout'
-import { View } from 'app/design/view'
+import { A, H1, P, Text, TextLink } from "@ijn/app/design/typography";
+import { Row, ScrollView } from "@ijn/app/design/layout";
+import { View } from "@ijn/app/design/view";
 
-import { MotiLink } from 'solito/moti'
+import { MotiLink } from "solito/moti";
+import { Card } from "app/design/components/card";
 
 export function HomeScreen() {
   return (
-    <View className="flex-1 items-center justify-center p-3">
+    // <View className="flex-1 items-center justify-center p-3">
+    <ScrollView
+      contentContainerStyle={{ alignItems: "center" }}
+      className="flex-1 p-3 mb-8"
+    >
       <H1>Welcome to Solito.</H1>
       <View className="max-w-xl">
         <P className="text-center">
@@ -15,12 +20,12 @@ export function HomeScreen() {
           Native.
         </P>
         <P className="text-center">
-          Solito is made by{' '}
+          Solito is made by{" "}
           <A
             href="https://twitter.com/fernandotherojo"
             hrefAttrs={{
-              target: '_blank',
-              rel: 'noreferrer',
+              target: "_blank",
+              rel: "noreferrer",
             }}
           >
             Fernando Rojo
@@ -28,12 +33,12 @@ export function HomeScreen() {
           .
         </P>
         <P className="text-center">
-          NativeWind is made by{' '}
+          NativeWind is made by{" "}
           <A
             href="https://twitter.com/mark__lawlor"
             hrefAttrs={{
-              target: '_blank',
-              rel: 'noreferrer',
+              target: "_blank",
+              rel: "noreferrer",
             }}
           >
             Mark Lawlor
@@ -44,18 +49,20 @@ export function HomeScreen() {
       <View className="h-[32px]" />
       <Row className="space-x-8">
         <TextLink href="/user/fernando">Regular Link</TextLink>
+        <TextLink href="/auth/auth-apple">Apple Login</TextLink>
+        <TextLink href="/auth/auth-google">Google Login</TextLink>
         <MotiLink
           href="/user/fernando"
           animate={({ hovered, pressed }) => {
-            'worklet'
+            "worklet";
 
             return {
               scale: pressed ? 0.95 : hovered ? 1.1 : 1,
-              rotateZ: pressed ? '0deg' : hovered ? '-3deg' : '0deg',
-            }
+              rotateZ: pressed ? "0deg" : hovered ? "-3deg" : "0deg",
+            };
           }}
           transition={{
-            type: 'timing',
+            type: "timing",
             duration: 150,
           }}
         >
@@ -64,6 +71,8 @@ export function HomeScreen() {
           </Text>
         </MotiLink>
       </Row>
-    </View>
-  )
+      <Card />
+    </ScrollView>
+    // </View>
+  );
 }
