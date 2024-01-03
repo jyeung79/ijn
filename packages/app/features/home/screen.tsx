@@ -3,7 +3,9 @@ import { Row, ScrollView } from "@ijn/app/design/layout";
 import { View } from "@ijn/app/design/view";
 
 import { MotiLink } from "solito/moti";
-import { Card } from "app/design/components/card";
+import { Card } from "@ijn/app/design/components/card";
+
+const ScriptureCards = [1, 2, 3, 4, 5].map((item, index) => <Card key={`scripture-card-${index}`}/>);
 
 export function HomeScreen() {
   return (
@@ -71,7 +73,8 @@ export function HomeScreen() {
           </Text>
         </MotiLink>
       </Row>
-      <Card />
+      {/* <Card /> */}
+      {ScriptureCards}
     </ScrollView>
     // </View>
   );

@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "ijn-v2",
+    "slug": "ijn-v2",
+    "version": "1.0.0",
+    "sdkVersion": "49.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "android": {
+      "package": "com.ijn.app"
+    },
+    "ios": {
+      "bundleIdentifier": "com.ijn.app"
+    }
+  }
+}
