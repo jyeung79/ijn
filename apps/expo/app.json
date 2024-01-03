@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "solito-nativewind",
-    "slug": "solito-nativewind",
-    "version": "1.0.0",
-    "scheme": "solito-nativewind",
+    "name": "ijn-scripture",
+    "slug": "ijn-scripture",
+    "version": "0.0.1",
+    "scheme": "ijn-scripture",
     "platforms": ["ios", "android"],
     "ios": {
       "bundleIdentifier": "com.ijn.app"
@@ -12,7 +12,7 @@
       [
         "@react-native-google-signin/google-signin",
         {
-          "iosUrlScheme": "com.googleusercontent.apps._some_id_here_"
+          "iosUrlScheme": "com.googleusercontent.apps.ijn-scripture"
         }
       ]
     ]
