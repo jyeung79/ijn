@@ -1,5 +1,5 @@
 {
-  "name": "ijn-v2",
+  "name": "ijn",
   "devDependencies": {
     "@types/react": "^18.2.21",
     "@types/react-native": "^0.72.2",

@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ijn-scripture",
-    "slug": "ijn-scripture",
+    "slug": "ijn-scripture-app",
     "version": "0.0.1",
     "scheme": "ijn-scripture",
     "platforms": ["ios", "android"],
@@ -12,7 +12,7 @@
       [
         "@react-native-google-signin/google-signin",
         {
-          "iosUrlScheme": "com.googleusercontent.apps.ijn-scripture"
+          "iosUrlScheme": "com.googleusercontent.apps.ijnScripture"
         }
       ]
     ]

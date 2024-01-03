@@ -1,4 +1,8 @@
 {
+  "name": "expo",
+  "main": "index.ts",
+  "version": "1.0.0",
+  "private": true,
   "dependencies": {
     "@react-native-google-signin/google-signin": "10",
     "app": "*",
@@ -32,9 +36,5 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web"
-  },
-  "main": "index.ts",
-  "version": "1.0.0",
-  "private": true,
-  "name": "expo-app"
+  }
 }
