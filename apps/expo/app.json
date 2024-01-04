@@ -4,7 +4,10 @@
     "slug": "ijn-scripture-app",
     "version": "0.0.1",
     "scheme": "ijn-scripture",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "ios": {
       "bundleIdentifier": "com.ijn.app"
     },
@@ -15,6 +18,9 @@
           "iosUrlScheme": "com.googleusercontent.apps.ijnScripture"
         }
       ]
-    ]
+    ],
+    "android": {
+      "package": "com.ijn.app"
+    }
   }
 }
