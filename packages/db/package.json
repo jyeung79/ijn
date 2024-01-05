@@ -2,6 +2,7 @@
   "name": "@ijn/db",
   "module": "index.ts",
   "type": "module",
+
   "devDependencies": {
     "bun-types": "latest",
     "drizzle-kit": "^0.20.6"
@@ -12,5 +13,8 @@
   "dependencies": {
     "drizzle-orm": "0.27",
     "postgres": "^3.4.3"
+  },
+  "scripts": {
+    "clean": "git clean -xdf node_modules"
   }
 }

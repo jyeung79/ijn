@@ -2,12 +2,6 @@
   "name": "next-app",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "dependencies": {
     "@expo/next-adapter": "5.0.2",
     "app": "*",
@@ -20,5 +14,12 @@
     "autoprefixer": "^10.4.7",
     "eslint-config-next": "13.2.0",
     "tailwindcss": "^3.0.24"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "git clean -xdf node_modules .next"
   }
 }

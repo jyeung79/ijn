@@ -10,5 +10,8 @@
   },
   "dependencies": {
     "@trpc/server": "^10.44.1"
+  },
+  "scripts": {
+    "clean": "git clean -xdf node_modules"
   }
 }
