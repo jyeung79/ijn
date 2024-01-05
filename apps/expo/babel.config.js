@@ -1,11 +1,16 @@
+/** @type {import("@babel/core").ConfigFunction} */
 module.exports = function (api) {
-  api.cache(true)
+  api.cache.forever();
+
   return {
-    presets: [['babel-preset-expo', { jsxRuntime: 'automatic' }]],
-    plugins: [
-      'react-native-reanimated/plugin',
-      'nativewind/babel',
-      'expo-router/babel',
+    presets: [
+      ["babel-preset-expo", { jsxImportSource: "nativewind" }],
+      "nativewind/babel",
     ],
-  }
-}
+    plugins: [
+      // Required for expo-router
+      "expo-router/babel",
+      "react-native-reanimated/plugin",
+    ],
+  };
+};
