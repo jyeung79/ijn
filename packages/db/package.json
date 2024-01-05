@@ -2,7 +2,6 @@
   "name": "@ijn/db",
   "module": "index.ts",
   "type": "module",
-
   "devDependencies": {
     "bun-types": "latest",
     "drizzle-kit": "^0.20.6"
