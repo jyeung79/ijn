@@ -25,6 +25,6 @@ if (config.resolver) {
 
 // @ts-expect-error - FIXME: type is mismatching?
 module.exports = withNativeWind(config, {
-  input: "./src/styles.css",
-  configPath: "./tailwind.config.ts",
+  input: "./app/style.css",
+  configPath: "./tailwind.config.js",
 });

@@ -1,5 +1,4 @@
 // @ts-check
-
 const { theme } = require("@ijn/app/design/tailwind/theme");
 
 /**
@@ -7,7 +6,7 @@ const { theme } = require("@ijn/app/design/tailwind/theme");
  */
 module.exports = {
   content: ["./App.tsx", "../../packages/**/*.{js,jsx,ts,tsx}"],
-  presets: [require("nativewind/preset")],
+  presets: ["nativewind/preset"],
   theme: {
     ...theme,
   },
