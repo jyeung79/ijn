@@ -1,5 +1,5 @@
 {
-  "name": "expo",
+  "name": "@ijn/expo",
   "main": "index.ts",
   "version": "1.0.0",
   "private": true,
