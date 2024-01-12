@@ -1,8 +1,8 @@
 import type { ExpoConfig } from "@expo/config";
 
 const defineConfig = (): ExpoConfig => ({
-  name: "ijn",
-  slug: "ijn-scripture",
+  name: "expo",
+  slug: "expo",
   scheme: "expo",
   version: "0.1.0",
   orientation: "portrait",
@@ -16,11 +16,11 @@ const defineConfig = (): ExpoConfig => ({
   },
   assetBundlePatterns: ["**/*"],
   ios: {
-    bundleIdentifier: "com.ijn.app",
+    bundleIdentifier: "ijn.com.app",
     supportsTablet: true,
   },
   android: {
-    package: "com.ijn.app",
+    package: "ijn.com.app",
     adaptiveIcon: {
       backgroundColor: "#1F104A",
     },
@@ -34,7 +34,7 @@ const defineConfig = (): ExpoConfig => ({
     tsconfigPaths: true,
     typedRoutes: true,
   },
-  // plugins: ["expo-router", "./expo-plugins/with-modify-gradle.js"],
+  plugins: ["expo-router", "./expo-plugins/with-modify-gradle.js"],
 });
 
 export default defineConfig;

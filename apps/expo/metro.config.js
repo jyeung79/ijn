@@ -2,7 +2,6 @@
 const { getDefaultConfig } = require("@expo/metro-config");
 const { withNativeWind } = require("nativewind/metro");
 
-
 const path = require("path");
 
 const projectRoot = __dirname;
@@ -25,6 +24,6 @@ if (config.resolver) {
 
 // @ts-expect-error - FIXME: type is mismatching?
 module.exports = withNativeWind(config, {
-  input: "./app/style.css",
-  configPath: "./tailwind.config.js",
+  input: "./styles.css",
+  configPath: "./tailwind.config.ts",
 });
